@@ -14,10 +14,15 @@ provider "azurerm" {
   subscription_id = "6ed44b8b-06a3-4f16-8837-b21409d5dad6"
 }
 
+
+
+// This is for Resource Group
 resource "azurerm_resource_group" "testrg" {
   name     = "testrg"
   location = "westus"
 }
+
+// This is for Virtual Network
 
 resource "azurerm_virtual_network" "testvnet" {
   name                = "testvnet"
